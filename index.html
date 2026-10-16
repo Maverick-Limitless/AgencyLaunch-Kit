@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgencyLaunch Kit — Website template for AI automation studios</title>
+  <meta name="description" content="A complete, customizable website template for solo AI automation consultants and small automation agencies. Includes a local ROI calculator, example service pages content, and full documentation.">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AgencyLaunch Kit — Website template for AI automation studios">
+  <meta property="og:description" content="A complete, customizable website template for solo AI automation consultants and small automation agencies.">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top">
+        <svg class="brand__mark" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" focusable="false">
+          <rect x="1" y="1" width="20" height="20" rx="5" fill="currentColor"></rect>
+          <circle cx="11" cy="7" r="2.1" fill="var(--color-background)"></circle>
+          <circle cx="6.6" cy="15" r="1.7" fill="var(--color-background)"></circle>
+          <circle cx="15.4" cy="15" r="1.7" fill="var(--color-background)"></circle>
+          <path d="M11 9.1 8 13.4M11 9.1 14 13.4M8.3 15h5.4" stroke="var(--color-background)" stroke-width="1.2" fill="none" stroke-linecap="round"></path>
+        </svg>
+        <span class="brand__name">AgencyLaunch<span class="brand__name-suffix">Kit</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul class="primary-nav__list">
+          <li><a href="#use-cases">Use cases</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#calculator">Calculator</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a class="button button--accent nav-cta" href="#contact">Book a workflow audit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- 01 · Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow eyebrow--accent">AI automation studio</p>
+          <h1 class="hero__title" id="hero-title">Automate the repetitive work behind your business.</h1>
+          <p class="hero__lede">We design, build, and maintain practical automations for the tasks that quietly eat your week — lead qualification, support triage, admin workflows, and internal reporting.</p>
+          <div class="hero__actions">
+            <a class="button button--accent button--lg" href="#contact">Book a workflow audit</a>
+            <a class="button button--ghost button--lg" href="#calculator">Estimate your savings</a>
+          </div>
+          <p class="hero__note">Every engagement starts with a workflow audit: we map the task, measure the time it actually consumes, and automate only what is worth automating.</p>
+        </div>
+
+        <figure class="hero__figure">
+          <svg class="pipeline" viewBox="0 0 520 300" role="img" aria-labelledby="pipeline-title pipeline-desc">
+            <title id="pipeline-title">Example automation pipeline</title>
+            <desc id="pipeline-desc">A diagram of an example automation. A new request arrives, is qualified against set rules, then either an automated action replies directly, or the request is routed to a person for review.</desc>
+            <g class="pipeline__grid" aria-hidden="true">
+              <path d="M0 60h520M0 120h520M0 180h520M0 240h520"></path>
+              <path d="M80 0v300M160 0v300M240 0v300M320 0v300M400 0v300"></path>
+            </g>
+            <g class="pipeline__links" fill="none" stroke-linecap="round">
+              <path d="M96 78 C 136 78, 140 150, 180 150" class="pipeline__link"></path>
+              <path d="M268 150 C 308 150, 312 70, 352 70" class="pipeline__link pipeline__link--auto"></path>
+              <path d="M268 150 C 308 150, 312 230, 352 230" class="pipeline__link"></path>
+              <path d="M352 230 C 392 230, 396 150, 424 150" class="pipeline__link"></path>
+            </g>
+            <g class="pipeline__nodes">
+              <g class="node">
+                <rect x="20" y="50" width="76" height="56" rx="8"></rect>
+                <text x="58" y="74" text-anchor="middle" class="node__label">Request</text>
+                <text x="58" y="90" text-anchor="middle" class="node__meta">arrives</text>
+              </g>
+              <g class="node node--auto">
+                <rect x="180" y="122" width="88" height="56" rx="8"></rect>
+                <text x="224" y="146" text-anchor="middle" class="node__label">Rules</text>
+                <text x="224" y="162" text-anchor="middle" class="node__meta">qualify</text>
+              </g>
+              <g class="node node--auto">
+                <rect x="352" y="42" width="88" height="56" rx="8"></rect>
+                <text x="396" y="66" text-anchor="middle" class="node__label">Reply</text>
+                <text x="396" y="82" text-anchor="middle" class="node__meta">automated</text>
+              </g>
+              <g class="node">
+                <rect x="352" y="202" width="88" height="56" rx="8"></rect>
+                <text x="396" y="226" text-anchor="middle" class="node__label">Person</text>
+                <text x="396" y="242" text-anchor="middle" class="node__meta">reviews</text>
+              </g>
+              <g class="node node--end">
+                <rect x="424" y="122" width="76" height="56" rx="8"></rect>
+                <text x="462" y="146" text-anchor="middle" class="node__label">Done</text>
+                <text x="462" y="162" text-anchor="middle" class="node__meta">logged</text>
+              </g>
+            </g>
+          </svg>
+          <figcaption class="hero__caption">An example automation pattern. Solid lime marks steps a machine can run on its own; outlined steps keep a human in the loop.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 02 · Principles -->
+    <section class="section" id="principles" aria-labelledby="principles-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">02 · How a good engagement works</p>
+          <h2 class="section-title" id="principles-title">Automation is a practice, not a purchase</h2>
+          <p class="section-lede">The automations that last share five traits. Any proposal that skips one of them tends to break quietly a few months in.</p>
+        </header>
+        <ul class="principles">
+          <li class="principle">
+            <p class="principle__label">Objectives</p>
+            <h3 class="principle__title">A stated business outcome</h3>
+            <p class="principle__body">Faster replies, cleaner handoffs, fewer dropped tasks. If the goal is "use AI", the project has no finish line.</p>
+          </li>
+          <li class="principle">
+            <p class="principle__label">Selection</p>
+            <h3 class="principle__title">The right workflow</h3>
+            <p class="principle__body">High-volume, rule-shaped, repetitive work automates well. Ambiguous judgement calls usually belong with people.</p>
+          </li>
+          <li class="principle">
+            <p class="principle__label">Oversight</p>
+            <h3 class="principle__title">Human review where it matters</h3>
+            <p class="principle__body">Automation handles the volume; a person still approves anything that touches a customer relationship or a commitment.</p>
+          </li>
+          <li class="principle">
+            <p class="principle__label">Measurement</p>
+            <h3 class="principle__title">Operational outcomes</h3>
+            <p class="principle__body">Hours returned, response times, error rates — tracked before and after, so the result is an observation rather than a promise.</p>
+          </li>
+          <li class="principle">
+            <p class="principle__label">Reliability</p>
+            <h3 class="principle__title">Maintenance and monitoring</h3>
+            <p class="principle__body">Tools change and workflows drift. Automations need an owner, alerting, and a scheduled review — or they rot.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- 03 · Use cases -->
+    <section class="section section--alt" id="use-cases" aria-labelledby="use-cases-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">03 · Use cases</p>
+          <h2 class="section-title" id="use-cases-title">Four places automation usually pays off first</h2>
+          <p class="section-lede">These are the workflows we see most often. Each one has a concrete shape, and each one is measured before anyone builds anything.</p>
+        </header>
+        <div class="cards">
+          <article class="card">
+            <h3 class="card__title">Lead qualification</h3>
+            <p class="card__body">Every inbound enquiry gets a consistent first response, a short qualifying question set, and a routed, summarised handoff — so sales time goes to conversations, not triage.</p>
+            <p class="card__example"><span class="card__example-label">Example</span> A form submission is scored against your criteria, answered within a minute, and booked straight into the right calendar.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Customer support triage</h3>
+            <p class="card__body">Tickets are classified, tagged, and matched to the right article or owner. Repetitive questions get a drafted reply a human approves rather than one typed from scratch.</p>
+            <p class="card__example"><span class="card__example-label">Example</span> A shipping enquiry is answered with the tracking status pulled from your order system, no agent involved.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Repetitive admin</h3>
+            <p class="card__body">Invoicing, data entry, file handoffs, spreadsheet copy-paste. Unglamorous work with a clear rule set and a measurable time cost — usually the fastest win.</p>
+            <p class="card__example"><span class="card__example-label">Example</span> A weekly report is assembled from three tools and emailed every Friday at 16:00, without anyone opening a tab.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Internal reporting</h3>
+            <p class="card__body">Operational numbers gathered from the tools your team already uses, compiled on a schedule, and delivered where people actually read them.</p>
+            <p class="card__example"><span class="card__example-label">Example</span> A Monday digest of pipeline changes, overdue tasks, and support load, generated from your existing systems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · Process -->
+    <section class="section" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">04 · Process</p>
+          <h2 class="section-title" id="process-title">From first conversation to a running automation</h2>
+          <p class="section-lede">An example of how an engagement runs. These are the steps of the service this website advertises — not features of the website template itself.</p>
+        </header>
+        <ol class="steps">
+          <li class="step">
+            <p class="step__number">Step 1</p>
+            <h3 class="step__title">Discover the workflow</h3>
+            <p class="step__body">We walk the task with the people who do it, note the rules they apply, and record the volume and time it costs per week.</p>
+          </li>
+          <li class="step">
+            <p class="step__number">Step 2</p>
+            <h3 class="step__title">Design the automation</h3>
+            <p class="step__body">You see the proposed flow, the data it touches, and the review points before anything is built. Scope and success measures are agreed here.</p>
+          </li>
+          <li class="step">
+            <p class="step__number">Step 3</p>
+            <h3 class="step__title">Implement and validate</h3>
+            <p class="step__body">The automation is built against real-but-safe inputs, tested with the edge cases your work actually produces, and handed over with documentation.</p>
+          </li>
+          <li class="step">
+            <p class="step__number">Step 4</p>
+            <h3 class="step__title">Monitor and improve</h3>
+            <p class="step__body">Failures alert a named owner, results are compared against the baseline, and the workflow is revisited as your tools change.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 05 · ROI calculator -->
+    <section class="section section--alt" id="calculator" aria-labelledby="calculator-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">05 · ROI calculator</p>
+          <h2 class="section-title" id="calculator-title">Estimate what a workflow is worth automating</h2>
+          <p class="section-lede">Enter your own assumptions. Every calculation runs in your browser — nothing is sent to a server, and nothing you type is stored.</p>
+        </header>
+
+        <form class="calc" id="roi-form" novalidate>
+          <div class="calc__panel calc__panel--inputs">
+            <fieldset class="calc__fieldset">
+              <legend class="calc__legend">Your assumptions</legend>
+
+              <div class="field">
+                <label class="field__label" for="calc-tasks">Tasks per week</label>
+                <input class="field__input" id="calc-tasks" name="tasksPerWeek" type="number" inputmode="decimal"
+                       min="0" max="100000" step="1" value="100"
+                       aria-describedby="calc-tasks-hint calc-tasks-error" required>
+                <p class="field__hint" id="calc-tasks-hint">How many times the task happens each week. 0–100,000.</p>
+                <p class="field__error" id="calc-tasks-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="calc-minutes">Minutes per task</label>
+                <input class="field__input" id="calc-minutes" name="minutesPerTask" type="number" inputmode="decimal"
+                       min="0" max="1440" step="any" value="8"
+                       aria-describedby="calc-minutes-hint calc-minutes-error" required>
+                <p class="field__hint" id="calc-minutes-hint">Average time a person spends on one task. 0–1,440.</p>
+                <p class="field__error" id="calc-minutes-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="calc-rate">Automation rate (%)</label>
+                <input class="field__input" id="calc-rate" name="automationRate" type="number" inputmode="decimal"
+                       min="0" max="100" step="any" value="50"
+                       aria-describedby="calc-rate-hint calc-rate-error" required>
+                <p class="field__hint" id="calc-rate-hint">Share of the task an automation could realistically handle. 0–100.</p>
+                <p class="field__error" id="calc-rate-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="calc-labor">Loaded labor cost per hour ($)</label>
+                <input class="field__input" id="calc-labor" name="hourlyLaborCost" type="number" inputmode="decimal"
+                       min="0" max="10000" step="any" value="25"
+                       aria-describedby="calc-labor-hint calc-labor-error" required>
+                <p class="field__hint" id="calc-labor-hint">Fully loaded cost of an hour of the affected work. 0–10,000.</p>
+                <p class="field__error" id="calc-labor-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="calc-tools">Monthly tools and maintenance ($)</label>
+                <input class="field__input" id="calc-tools" name="monthlyToolCost" type="number" inputmode="decimal"
+                       min="0" max="1000000" step="any" value="100"
+                       aria-describedby="calc-tools-hint calc-tools-error" required>
+                <p class="field__hint" id="calc-tools-hint">Recurring cost of running the automation. 0–1,000,000.</p>
+                <p class="field__error" id="calc-tools-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="calc-setup">One-time setup cost ($)</label>
+                <input class="field__input" id="calc-setup" name="setupCost" type="number" inputmode="decimal"
+                       min="0" max="10000000" step="any" value="500"
+                       aria-describedby="calc-setup-hint calc-setup-error" required>
+                <p class="field__hint" id="calc-setup-hint">What it costs to build the first time. 0–10,000,000.</p>
+                <p class="field__error" id="calc-setup-error" hidden></p>
+              </div>
+            </fieldset>
+
+            <div class="calc__actions">
+              <button class="button button--quiet" type="reset" id="calc-reset">Reset to defaults</button>
+            </div>
+          </div>
+
+          <div class="calc__panel calc__panel--outputs">
+            <div class="calc__status" id="calc-status" role="status" aria-live="polite"></div>
+            <dl class="results" id="calc-results">
+              <div class="results__row">
+                <dt class="results__label">Baseline monthly hours</dt>
+                <dd class="results__value" id="result-hours-before">—</dd>
+              </div>
+              <div class="results__row">
+                <dt class="results__label">Estimated monthly hours saved</dt>
+                <dd class="results__value" id="result-hours-saved">—</dd>
+              </div>
+              <div class="results__row">
+                <dt class="results__label">Estimated gross monthly labor value</dt>
+                <dd class="results__value" id="result-gross">—</dd>
+              </div>
+              <div class="results__row">
+                <dt class="results__label">Monthly tools and maintenance</dt>
+                <dd class="results__value" id="result-tools">—</dd>
+              </div>
+              <div class="results__row results__row--strong">
+                <dt class="results__label">Estimated net monthly value</dt>
+                <dd class="results__value" id="result-net">—</dd>
+              </div>
+              <div class="results__row results__row--strong">
+                <dt class="results__label">Estimated setup-cost payback</dt>
+                <dd class="results__value" id="result-payback">—</dd>
+              </div>
+            </dl>
+            <div class="calc__notes">
+              <h3 class="calc__notes-title">Assumptions and limitations</h3>
+              <ul class="calc__notes-list">
+                <li>Estimates use the numbers you enter. They are illustrative, not a financial forecast.</li>
+                <li>Gross value is time saved multiplied by your entered hourly cost. It is not new revenue.</li>
+                <li>Payback appears only when the net monthly estimate is above zero.</li>
+                <li>Calculations run locally in this page. Your values are never transmitted or saved.</li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- 06 · Services -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">06 · Services</p>
+          <h2 class="section-title" id="services-title">What an engagement can cover</h2>
+          <p class="section-lede">Three example service categories, written so you can replace them with your own. The descriptions are starting points, not a fixed offer.</p>
+        </header>
+        <div class="cards cards--three">
+          <article class="card">
+            <h3 class="card__title">Workflow automation</h3>
+            <p class="card__body">Rule-shaped, repetitive work moved off people's plates: qualification, routing, data movement, scheduled reports, and the copy-paste that lives between your tools.</p>
+            <p class="card__example"><span class="card__example-label">Typical shape</span> A scoped workflow, built and validated, with monitoring and a named owner.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">AI-assisted support operations</h3>
+            <p class="card__body">Your existing knowledge and macros turned into answers a person approves. Classification, drafting, and summarising — so agents spend their time on the cases that need them.</p>
+            <p class="card__example"><span class="card__example-label">Typical shape</span> A triage layer over your current inbox or helpdesk, with review before anything sends.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Business systems integration</h3>
+            <p class="card__body">The tools you already pay for, connected properly: CRM, scheduling, invoicing, spreadsheets, and internal apps, with the data flowing in one agreed direction.</p>
+            <p class="card__example"><span class="card__example-label">Typical shape</span> A documented integration between two or three systems, owned and maintained.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 · Example pricing -->
+    <section class="section section--alt" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">07 · Example pricing</p>
+          <h2 class="section-title" id="pricing-title">Sample packages — replace with your own</h2>
+          <p class="section-lede">These are examples of website content for this template, not a real offer. Customize the names, the scope, and the sample prices before you publish.</p>
+        </header>
+        <div class="cards cards--three">
+          <article class="card card--package">
+            <h3 class="card__title">Workflow audit</h3>
+            <p class="package__price"><span class="package__currency">$</span>490<span class="package__period"> · example package</span></p>
+            <p class="card__body">A scoped look at one workflow: the current steps, the time they cost, and a recommendation on whether automating them is worth it.</p>
+            <ul class="package__list">
+              <li>One workflow mapped end to end</li>
+              <li>Time and volume baseline recorded</li>
+              <li>Written recommendation, no build</li>
+            </ul>
+            <a class="button button--quiet" href="#contact">Ask about an audit</a>
+          </article>
+          <article class="card card--package card--featured">
+            <h3 class="card__title">Single automation</h3>
+            <p class="package__price"><span class="package__currency">$</span>2,400<span class="package__period"> · example package</span></p>
+            <p class="card__body">One workflow, designed, built, and validated against your real inputs — with documentation, monitoring, and a handover session.</p>
+            <ul class="package__list">
+              <li>Design reviewed before build</li>
+              <li>Validated against real edge cases</li>
+              <li>Monitoring, alerting, one owner</li>
+            </ul>
+            <a class="button button--accent" href="#contact">Discuss a workflow</a>
+          </article>
+          <article class="card card--package">
+            <h3 class="card__title">Automation retainer</h3>
+            <p class="package__price"><span class="package__currency">$</span>900<span class="package__period">/month · example package</span></p>
+            <p class="card__body">Ongoing care for automations that matter: monitoring, fixes as your tools change, and a scheduled review of what to improve next.</p>
+            <ul class="package__list">
+              <li>Monitoring and first response</li>
+              <li>Fixes when tools change</li>
+              <li>Quarterly workflow review</li>
+            </ul>
+            <a class="button button--quiet" href="#contact">Ask about retainers</a>
+          </article>
+        </div>
+        <p class="pricing__note">This template contains no checkout, subscription, or payment processing. Each button simply opens the contact section below.</p>
+      </div>
+    </section>
+
+    <!-- 08 · FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container container--narrow">
+        <header class="section-head">
+          <p class="eyebrow">08 · Questions</p>
+          <h2 class="section-title" id="faq-title">Frequently asked questions</h2>
+          <p class="section-lede">Straight answers to the questions that come up in a first conversation.</p>
+        </header>
+        <div class="faq">
+          <details class="faq__item">
+            <summary class="faq__question">What kinds of tasks are suitable for automation?</summary>
+            <div class="faq__answer">
+              <p>Work that is frequent, follows rules you can write down, and uses data your tools already produce. Qualification routing, status follow-ups, report assembly, and data transfer between systems are typical. One-off judgement calls usually are not worth automating.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">How should a business estimate potential savings?</summary>
+            <div class="faq__answer">
+              <p>Start from measured time: how often the task runs, how long one run takes, and what that hour costs you fully loaded. Multiply through, subtract the recurring cost of running the automation, and treat the result as an estimate — the <a href="#calculator">calculator above</a> follows exactly this method. Real savings show up in the measurement after implementation, not in the estimate before it.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">What happens when an automation fails?</summary>
+            <div class="faq__answer">
+              <p>Failures are expected, which is why every automation we ship has alerting to a named person and a run history you can inspect. A failed step is paused rather than repeated blindly, so a bad input never produces a flood of wrong actions.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">Is human review still necessary?</summary>
+            <div class="faq__answer">
+              <p>Usually, for anything a customer or a partner sees, and for anything with money or commitments attached. A good automation does the volume and the drafting; a person approves what matters. Work that is purely internal and reversible can often run unattended.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">How long might an implementation take?</summary>
+            <div class="faq__answer">
+              <p>It depends on how many systems the workflow touches and how reliable their data is. A single-tool automation can be days; something spanning three systems with messy inputs is more likely weeks. An audit exists precisely to replace a guess with a scoped answer before anyone builds.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">Who owns the automation afterwards?</summary>
+            <div class="faq__answer">
+              <p>You do. Automations are documented and built in your accounts wherever the tooling allows it, so nothing depends on us staying involved. A retainer is available for monitoring and fixes, but it is optional.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09 · Contact -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__copy">
+            <p class="eyebrow eyebrow--accent">09 · Next step</p>
+            <h2 class="section-title" id="contact-title">Start with the workflow, not the tooling</h2>
+            <p class="section-lede">Send a short description of the task you have in mind. You will get a reply with an honest read on whether it is worth automating, and what an audit would cover.</p>
+          </div>
+          <div class="contact__action">
+            <a class="button button--accent button--lg" href="mailto:hello@example.com">hello@example.com</a>
+            <p class="contact__note">Placeholder address — replace <code>hello@example.com</code> in <code>index.html</code> (and in the footer) with your own address before you publish. It appears in the contact section and the footer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <a class="brand brand--footer" href="#top">
+          <svg class="brand__mark" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" focusable="false">
+            <rect x="1" y="1" width="20" height="20" rx="5" fill="currentColor"></rect>
+            <circle cx="11" cy="7" r="2.1" fill="var(--color-navy)"></circle>
+            <circle cx="6.6" cy="15" r="1.7" fill="var(--color-navy)"></circle>
+            <circle cx="15.4" cy="15" r="1.7" fill="var(--color-navy)"></circle>
+            <path d="M11 9.1 8 13.4M11 9.1 14 13.4M8.3 15h5.4" stroke="var(--color-navy)" stroke-width="1.2" fill="none" stroke-linecap="round"></path>
+          </svg>
+          <span class="brand__name">AgencyLaunch<span class="brand__name-suffix">Kit</span></span>
+        </a>
+        <p class="site-footer__desc">A website template for AI automation studios and solo automation consultants. This page is example content — the copy, services, and sample prices are placeholders to customize.</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Footer">
+        <h2 class="site-footer__heading">Sections</h2>
+        <ul>
+          <li><a href="#use-cases">Use cases</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#calculator">ROI calculator</a></li>
+          <li><a href="#pricing">Example pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="site-footer__contact">
+        <h2 class="site-footer__heading">Contact</h2>
+        <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+        <p class="site-footer__placeholder-note">Placeholder address. Replace it with your own before publishing.</p>
+      </div>
+    </div>
+    <div class="container site-footer__legal">
+      <p>© <span id="footer-year">2026</span> Your Studio Name. Template content is an example — replace the name, contact details, and sample prices before publication.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

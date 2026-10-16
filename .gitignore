@@ -1,0 +1,15 @@
+# OS and editor cruft
+.DS_Store
+Thumbs.db
+
+# Local environment
+.env
+.env.*
+
+# Node (development only — the product has no dependencies)
+node_modules/
+npm-debug.log*
+
+# Playwright artifacts (development only)
+playwright-report/
+test-results/

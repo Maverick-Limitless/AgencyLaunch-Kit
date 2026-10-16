@@ -1,0 +1,134 @@
+AGENCYLAUNCH KIT — PROPRIETARY SOURCE-AVAILABLE LICENSE
+
+Version 1.1 — Copyright (c) 2026 Maverick Limitless. All rights reserved.
+
+This license applies to the AgencyLaunch Kit source repository and the
+materials in it: the website template files (index.html, styles.css,
+script.js), the original SVG assets in assets/, the documentation in
+docs/, the tests in tests/, and this license. By viewing, downloading, or
+otherwise using the repository you agree to the terms below. If you do not
+agree, do not use the materials.
+
+1. OWNERSHIP
+
+   AgencyLaunch Kit is the original work of Maverick Limitless. All
+   copyright and other intellectual-property rights in the project are
+   retained by the rights holder. No ownership is transferred by viewing,
+   downloading, or forking this repository.
+
+2. PUBLIC VISIBILITY IS NOT PERMISSION
+
+   This repository is published publicly so that the product can be
+   inspected, evaluated, and discovered. Public visibility of the source
+   code is not, and must not be read as, a grant of rights to use it.
+   Reading the source is not the same as holding a license.
+
+3. NO GENERAL COMMERCIAL-USE GRANT
+
+   Except for the limited viewing use described in section 4, this
+   repository grants no general commercial-use rights. Without an explicit
+   written authorization from the rights holder, you may NOT:
+
+     a. use the template, or any part of it, for a commercial purpose;
+     b. deploy, publish, or host the template, or any website built from
+        it, on the public internet or on a private network;
+     c. reproduce, copy, or incorporate the files into another project;
+     d. modify, adapt, translate, or create derivative works from the
+        files;
+     e. redistribute, sublicense, publish, resell, rent, lease, or
+        otherwise commercially exploit the template, in original or
+        modified form;
+     f. remove, alter, or obscure this license, the copyright notice, or
+        the authorship information in the files.
+
+   "Commercial purpose" includes any use connected to a business, a
+   client engagement, a paid service, a product for sale, or any activity
+   intended to generate revenue or commercial advantage.
+
+4. LIMITED PERMITTED USE: VIEWING AND EVALUATION
+
+   You may view and download the files from this public repository for the
+   sole purpose of evaluating whether to request a license, and you may
+   discuss the project with the rights holder for that purpose. This is
+   the only use granted by the public repository itself. Evaluation
+   permitted here does not extend to deploying, modifying, or building
+   anything from the files, and it does not extend to client, customer, or
+   revenue-connected activity.
+
+5. HOW TO OBTAIN PERMISSION
+
+   To use AgencyLaunch Kit for anything beyond the evaluation use in
+   section 4, you must obtain an explicit written license. Send your
+   request to:
+
+     Maverick_Limitless@icloud.com
+
+   Include: the intended use; the business, client, or project involved;
+   the number of websites or deployments required; any modification or
+   client-delivery needs; and any redistribution or exclusivity you want
+   to discuss. See docs/LICENSE-GUIDANCE.md for what happens next.
+
+6. LICENSES ARE GRANTED ONLY BY WRITTEN AGREEMENT
+
+   A commercial license is granted only through an explicit written
+   agreement — an email confirmation, a signed license grant, or an
+   equivalent written record — between you and the rights holder. An
+   email inquiry, a fork, a download, or a conversation does not grant a
+   license. The rights granted are exactly those stated in that written
+   agreement, and nothing more: the scope of permitted use, the number of
+   deployments, modification and client-delivery rights, redistribution
+   and resale rights, exclusivity, term, territory, and payment
+   conditions are all determined by the agreement. A template for the
+   written grant is provided in docs/COMMERCIAL-LICENSE.md.
+
+7. THIRD-PARTY MATERIALS
+
+   The project contains no third-party components, fonts, images,
+   scripts, libraries, or services, and no third-party license notices
+   are required for the materials as published — see
+   docs/THIRD-PARTY-NOTICES.md for the audit result. If you add
+   third-party materials to a customized version, those materials remain
+   subject to their own licenses, which are your responsibility.
+
+8. NO WARRANTY
+
+   THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND
+   NON-INFRINGEMENT. Nothing in this license excludes or limits any
+   warranty or right that cannot lawfully be excluded or limited under
+   applicable law.
+
+9. NO SUPPORT
+
+   No support, maintenance, updates, hosting, or custom development are
+   included or promised by publishing this repository. Support terms, if
+   any, exist only where a separate written agreement states them.
+
+10. LIMITATION OF LIABILITY
+
+    TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE RIGHTS HOLDER
+    IS NOT LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN
+    CONTRACT, TORT, OR OTHERWISE, ARISING FROM THE MATERIALS OR THEIR
+    USE. Nothing in this section limits liability that cannot lawfully be
+    limited.
+
+11. TERMINATION
+
+    Any permission that has been granted ends automatically if its terms
+    are breached. Sections 1, 2, 3, 8, 9, 10, and 12 survive termination.
+
+12. GENERAL
+
+    a. This repository is hosted on GitHub, and its public availability
+       is also subject to GitHub's platform terms.
+    b. This license is the entire agreement for the public repository
+       and is separate from any individual commercial license agreement.
+    c. If a written license agreement grants rights that differ from this
+       notice, that agreement governs for the licensee and scope it
+       covers; this notice continues to apply to everyone else.
+    d. This license is not legal advice. If your intended use is unusual
+       or your jurisdiction imposes specific requirements, obtain advice
+       appropriate to your situation.
+
+Contact for licensing: Maverick_Limitless@icloud.com
