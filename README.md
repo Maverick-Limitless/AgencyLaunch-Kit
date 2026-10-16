@@ -78,7 +78,7 @@ There is no build step, no bundler, and no package manifest dependency list: the
 ## Local setup (tested)
 
 ```bash
-git clone https://github.com/YOUR-GITHUB-USERNAME/AgencyLaunch-Kit.git
+git clone https://github.com/scottyqzhconron55-sudo/AgencyLaunch-Kit.git
 cd AgencyLaunch-Kit
 python3 -m http.server 8000
 # open http://127.0.0.1:8000

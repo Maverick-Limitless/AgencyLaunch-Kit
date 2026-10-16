@@ -17,7 +17,7 @@ A practical template for granting an individual commercial license for AgencyLau
 | Contact (email) | [LICENSEE EMAIL] |
 | Licensed product | AgencyLaunch Kit |
 | Product version | [VERSION, e.g. 1.0.0] |
-| Repository reference | https://github.com/[GITHUB-USERNAME]/AgencyLaunch-Kit |
+| Repository reference | https://github.com/scottyqzhconron55-sudo/AgencyLaunch-Kit |
 
 **1. Scope of deployment.** The License is granted for the following approved website, project, business, or deployment scope: [E.G. ONE PRODUCTION WEBSITE FOR LICENSEE'S OWN BUSINESS — DOMAIN: EXAMPLE.COM / THREE CLIENT PROJECTS NAMED: ...]. Deployments outside the approved scope require a new or amended grant.
 
