@@ -2,59 +2,80 @@
 
 **Your AI Automation Business. Ready for the Web.**
 
-A customizable, static website template for independent AI automation consultants and small automation agencies — from automation expertise to a professional online presence.
+A customizable website foundation for AI automation entrepreneurs — license it, adapt it, deploy it yourself.
 
 ![Preview of AgencyLaunch Kit](assets/preview.svg)
 
-> **Licensing:** this repository is public for inspection, not open source. Viewing the code is free; **commercial use requires an explicit written license.** See [Licensing](#licensing-model) or email **Maverick_Limitless@icloud.com**.
+> **Licensing:** this repository is public for inspection, not open source. Viewing the code is free; **commercial use requires an explicit written license.** See [Commercial licensing](#commercial-licensing) or email **Maverick_Limitless@icloud.com**.
 
-## What is AgencyLaunch Kit?
+## The elevator pitch
 
-A complete, single-page website template for a business that sells AI automation services. It contains the pages' full structure — a landing page with hero, services, use cases, process, example pricing, FAQ, and contact — plus a working ROI calculator that runs entirely in the visitor's browser. It is a source-code template you customize and deploy yourself: not a hosted service, not a SaaS product, and not a website builder.
-
-## Who is it for?
-
-- Independent AI automation consultants who need a credible web presence.
-- Small AI automation agencies launching or replacing a website.
-- Solo consultants and freelancers selling workflow integration or automation services.
-- Small service businesses that need a clear way to explain their services and their value.
+AgencyLaunch Kit is a website starter project for AI automation entrepreneurs who want a professional web presence without building every foundational page and interaction from scratch. Inspect the source, understand the implementation, and request a commercial license to adapt the project to your business. You deploy and operate your own website; the standard offering is source code, not a hosted service.
 
 ## The problem
 
-A small agency needs a credible website: a place to communicate its services, explain what automation is worth, present its offering, and help a prospect see the return. Building that from scratch takes design, frontend implementation, responsive layout work, accessibility decisions, and testing — before the first customer ever sees it. Independent consultants rarely want to spend their selling time on any of that.
+An AI automation entrepreneur may be excellent at automation but still need a credible website to explain their services, communicate their value, and give prospective customers a clear path to make contact. Building that initial web presence from scratch takes time and requires design and implementation work that may not be the entrepreneur's main strength.
 
 ## The solution
 
-AgencyLaunch Kit provides a ready-made, tested website foundation. You inspect the actual code here, obtain the license you need, customize the copy and design for your business, and deploy static files to any host. Nothing is hidden behind a builder or a service — the source is the product.
+AgencyLaunch Kit provides an existing website foundation that a buyer can inspect here, license, customize, and deploy in their own environment. Everything described below is grounded in the actual source code in this repository — no builder, no service, no hidden dependencies.
 
-## Key benefits
+## Who the project is for
 
-- A faster starting point than building every page element from scratch.
-- Clear service and value communication, with content written for an automation-services audience.
-- A working, browser-based ROI calculator (verified by tests) — no backend, no data leaves the visitor's browser.
-- Responsive layout verified at 320, 375, 768, 1024, and 1440 CSS px.
-- No build step and no external runtime dependencies: no frameworks, no web fonts, no third-party scripts, no CDNs.
-- Accessibility-focused markup: skip link, semantic landmarks, labelled controls, keyboard-operable navigation and FAQ, visible focus styles, reduced-motion support.
-- Full control of the source code — modify it as your licensed rights allow.
-- Documentation for customization, testing, deployment, and licensing.
+- Independent AI automation consultants who need a professional web presence.
+- Small AI automation agencies launching or replacing a website.
+- Solo consultants and freelancers selling automation or workflow-integration services.
+- Small service businesses that need a clear way to explain services and communicate value.
 
-## Feature list (verified against the code)
+## What is actually included
 
-| Feature | Detail |
+| Deliverable | Detail |
 | --- | --- |
-| Complete landing page | Hero with original SVG process diagram, principles, 4 use-case cards, 4-step process, ROI calculator, 3 service cards, 3 example packages, 6 FAQ disclosures, contact section, footer |
-| ROI calculator | 6 validated inputs; local calculations; live formatted results; reset; explicit "no payback" handling; no storage or network use |
-| Responsive navigation | Sticky header with accessible mobile menu (`aria-expanded`, Escape, focus handling) |
+| Complete landing page | Hero with original SVG process diagram, working principles, 4 use-case cards, 4-step process, ROI calculator, 3 service cards, 3 example packages, 6 FAQ disclosures, contact section, footer |
+| ROI calculator | 6 validated inputs; calculations run entirely in the browser; live formatted results; reset; explicit "no payback" handling; no storage or network use |
+| Responsive navigation | Sticky header with an accessible mobile menu |
 | Design system | CSS custom properties (navy / off-white / ink / lime); system font stacks; `clamp()` type scale |
-| Original assets | `assets/favicon.svg`, `assets/preview.svg` — hand-authored SVG, no stock or third-party art |
-| Tests | 113 automated checks: 20 calculator unit tests, 16 static checks, 5 contrast checks, 24 browser checks × 3 engines (Chromium, Firefox, WebKit) |
-| Dependencies | None. No build step. No network requests at runtime |
+| Original assets | `assets/favicon.svg`, `assets/preview.svg` — hand-authored SVG |
+| Documentation | Setup, customization, testing, deployment, licensing, third-party notices |
+| Test suite | 113 automated checks (calculator unit tests, static checks, contrast checks, browser checks) |
+
+## Benefits
+
+- A starting point instead of a blank project.
+- Existing source code that can be inspected before a licensing decision.
+- A customizable foundation for an AI automation business's online presence.
+- Control over your own deployment and hosting.
+- A source-code purchase model without a mandatory AgencyLaunch Kit hosting subscription.
+- Transparent scope: you know what you receive and what remains your responsibility.
+
+## Benefits and practical limitations
+
+What this product does **not** do — stated plainly:
+
+- No guaranteed leads, clients, revenue, conversions, search rankings, or business growth.
+- No hosting, domain, deployment, maintenance, or support (unless separately agreed in writing).
+- No analytics, tracking, cookies, or consent machinery — by design.
+- The ROI calculator is an arithmetic estimator, not financial advice or accounting software.
+- The shipped content is example content — copy, services, and package prices are editable placeholders.
 
 ## Preview
 
-[`assets/preview.svg`](assets/preview.svg) is a genuine render of the template's key sections (hero, pipeline diagram, use-case cards). To preview the real thing locally, follow the quick start below.
+[`assets/preview.svg`](assets/preview.svg) is a genuine render of the template's key sections. To preview the real thing, follow the local setup below.
 
-## Quick start
+## Technology stack
+
+Grounded in the actual files:
+
+- Semantic HTML5 (`index.html`) — no templating language.
+- Modern CSS (`styles.css`) — custom properties, `clamp()`, no preprocessor needed.
+- Vanilla JavaScript (`script.js`) — no framework, no libraries, no imports.
+- Original inline SVG for all graphics.
+- Native browser APIs only (`Intl.NumberFormat`, `matchMedia`, `IntersectionObserver`-free motion).
+- Node.js built-in test runner for tests (`node:test`) — development only, not a runtime dependency.
+
+There is no build step, no bundler, and no package manifest dependency list: the site is served as-is.
+
+## Local setup (tested)
 
 ```bash
 git clone https://github.com/YOUR-GITHUB-USERNAME/AgencyLaunch-Kit.git
@@ -63,17 +84,13 @@ python3 -m http.server 8000
 # open http://127.0.0.1:8000
 ```
 
-(`YOUR-GITHUB-USERNAME` is the account that hosts this repository.)
-
-Any static file server works. There is nothing to install and nothing to build.
+Verified working with Python 3.14. Any static file server (`npx serve`, nginx, VS Code Live Server) works identically.
 
 ## Customization
 
-See [`docs/CUSTOMIZATION.md`](docs/CUSTOMIZATION.md) for step-by-step instructions: brand name, hero copy, services, sample pricing, contact email, color tokens, typography, navigation, FAQ content, and calculator defaults. In short: content lives in `index.html`, design tokens at the top of `styles.css`, calculator defaults and limits in `script.js`.
+[`docs/CUSTOMIZATION.md`](docs/CUSTOMIZATION.md) covers brand name, hero copy, services, sample pricing, contact email, color tokens, typography, navigation, FAQ content, and calculator defaults. In short: content lives in `index.html`, design tokens at the top of `styles.css`, calculator defaults and limits in `script.js`.
 
-Before publishing you must replace the placeholder contact address (`hello@example.com` in the contact section and footer), the brand name, and the example package prices — the page itself marks these as placeholders.
-
-## Testing
+## Testing (tested)
 
 ```bash
 node --test tests/calculator.test.js     # 20 calculator unit tests
@@ -81,49 +98,68 @@ node --test tests/smoke-checks.js        # 16 static checks
 node --test tests/contrast-checks.js     # 5 WCAG contrast checks
 ```
 
-The browser suite (`tests/browser-checks.js`, 24 checks per engine) is optional and needs Playwright installed outside the package. Full commands, prerequisites, expected output, and known limitations are in [`docs/TESTING.md`](docs/TESTING.md); recorded results are in [`TEST-REPORT.md`](TEST-REPORT.md).
+The browser suite (`tests/browser-checks.js`, 24 checks per engine, Chromium/Firefox/WebKit) needs Playwright installed outside the package. Commands, prerequisites, expected output, and limitations: [`docs/TESTING.md`](docs/TESTING.md). Actual results: [`TEST-REPORT.md`](TEST-REPORT.md).
 
 ## Deployment
 
-The site is static files. Upload the contents of this repository to any static host (GitHub Pages, Netlify, Cloudflare Pages, S3, traditional web hosting, or your own server) and serve — no build, no backend. Host-agnostic instructions and post-deploy verification are in [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
+The site is static files. Upload the contents to any static host (GitHub Pages, Netlify, Cloudflare Pages, S3, traditional web hosting, or your own server) and serve — no build, no backend. Host-agnostic instructions: [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
 
-Deploying, hosting, operating, and maintaining the resulting website are the site owner's responsibility.
+Deploying, hosting, operating, and maintaining the resulting website are your responsibility.
 
-## Licensing model
+## Commercial licensing
 
-**Source-available, proprietary — not open source.** Public visibility of this repository is for evaluation and discovery. It grants no commercial-use rights. Without an explicit written license you may not deploy, modify, redistribute, resell, or commercially use the template. The full terms are in [`LICENSE.txt`](LICENSE.txt).
+**Source-available, proprietary — not open source.** Public visibility of this repository is for inspection and evaluation. It grants no commercial-use rights. Without an explicit written license you may not deploy, modify, redistribute, resell, or commercially use the template. Full terms: [`LICENSE.txt`](LICENSE.txt).
 
-## Interested in using AgencyLaunch Kit commercially?
+## Pricing philosophy
 
-**Email Maverick_Limitless@icloud.com** with your intended use, business or project, number of websites or deployments, and any modification or client-delivery requirements. Commercial permissions are considered individually and are granted only through an explicit written agreement.
+**Straightforward, low-cost licensing. One source-code purchase, your own deployment, no mandatory AgencyLaunch Kit hosting subscription.**
 
-How it works: inspect this repository → email your intended use → discuss scope, rights, and terms → complete the agreed terms → receive an explicit written license → receive the source files under the granted rights → deploy and maintain independently unless separately contracted. Consumer-facing answers to the usual questions are in [`docs/LICENSE-GUIDANCE.md`](docs/LICENSE-GUIDANCE.md), and the grant template is in [`docs/COMMERCIAL-LICENSE.md`](docs/COMMERCIAL-LICENSE.md).
+We aim to make a useful website foundation accessible at a low upfront cost. The final price depends on the license scope agreed in writing — it is confirmed per grant in `docs/COMMERCIAL-LICENSE.md`, not announced on this page. No price is final until your written agreement states it.
 
-An email inquiry alone does not grant a license.
+## How to request a commercial license
 
-## Support and maintenance boundaries
+**Email Maverick_Limitless@icloud.com** with:
 
-- No support, maintenance, updates, or hosting are included by default — not by this repository and not by a license unless the written agreement says so.
-- The licensee is responsible for their own hosting, deployment, operations, and maintenance of any resulting website.
-- If you want support, custom development, or a defined update period, raise it during licensing so it can be agreed in writing.
+1. Your intended use.
+2. Your business or the client/project involved.
+3. The number of websites or deployments you need.
+4. Any modification or client-delivery requirements.
+
+The process: inspect this repository → email your intended use → discuss the required rights and scope → receive explicit written authorization with the final agreed terms → receive the files covered by the agreement → deploy independently. An email inquiry alone does not grant a license. Consumer guidance: [`docs/LICENSE-GUIDANCE.md`](docs/LICENSE-GUIDANCE.md); grant template: [`docs/COMMERCIAL-LICENSE.md`](docs/COMMERCIAL-LICENSE.md).
+
+## Ownership and attribution
+
+AgencyLaunch Kit is original work by **Maverick Limitless**, who retains copyright and all intellectual-property rights. Public visibility of the repository does not transfer ownership, and no ownership is transferred by a license either — a license grants the specific rights its written terms state, and nothing more.
 
 ## Third-party notices
 
-The project contains no third-party components, fonts, images, scripts, or services. The full audit is in [`docs/THIRD-PARTY-NOTICES.md`](docs/THIRD-PARTY-NOTICES.md), and the automated test suite fails if an external resource or credential is introduced.
+The project contains no third-party components, fonts, images, scripts, or services. The full audit and its verification method: [`docs/THIRD-PARTY-NOTICES.md`](docs/THIRD-PARTY-NOTICES.md). The test suite fails the build if an external resource or credential is introduced.
 
-## Project status and known limitations
+## Testing status
 
-Complete and tested (see [`TEST-REPORT.md`](TEST-REPORT.md) for the evidence and its limitations). Honest limits:
+113 automated checks pass: 20 calculator unit tests, 16 static checks, 5 WCAG contrast checks, and 24 browser checks on each of Chromium, Firefox, and WebKit. Recorded results, including what was **not** run (screen-reader testing, real-device gestures, production deployment), are in [`TEST-REPORT.md`](TEST-REPORT.md).
 
-- Content is example content — copy, services, and the three package prices are placeholders to customize.
-- The ROI calculator is an arithmetic estimator, not financial software: no time series, no saving or sharing, USD display only.
-- Screen-reader testing and real-device gesture testing were not performed by the project author; automated accessibility checks pass.
-- The template needs a license before commercial use — see above.
+## Security reporting
 
-## Changelog and test report
+If you believe you have found a security issue in this project, report it privately to **Maverick_Limitless@icloud.com** with a description and reproduction steps. Please do not open a public issue for it. Be aware that this is a licensing and project contact address, not a monitored security-intake service: no response time or bounty is promised. Do not include real credentials or personal data in your report.
 
-- [`CHANGELOG.md`](CHANGELOG.md) — release history.
-- [`TEST-REPORT.md`](TEST-REPORT.md) — what was actually verified, how, and what was not run.
+## Disclaimer
+
+AgencyLaunch Kit is a website foundation, not a guarantee of business outcomes. It does not promise customers, revenue, conversions, rankings, or savings. It has not been reviewed by a lawyer, and nothing in this repository is legal advice.
+
+## Documentation map
+
+| File | Contents |
+| --- | --- |
+| [`LICENSE.txt`](LICENSE.txt) | The proprietary source-available license — authoritative terms |
+| [`CHANGELOG.md`](CHANGELOG.md) | Release history |
+| [`TEST-REPORT.md`](TEST-REPORT.md) | Verification evidence and its limitations |
+| [`docs/LICENSE-GUIDANCE.md`](docs/LICENSE-GUIDANCE.md) | Licensing questions, consumer-facing |
+| [`docs/COMMERCIAL-LICENSE.md`](docs/COMMERCIAL-LICENSE.md) | Per-licensee grant template |
+| [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) | Host-agnostic deployment |
+| [`docs/CUSTOMIZATION.md`](docs/CUSTOMIZATION.md) | How to adapt the template |
+| [`docs/TESTING.md`](docs/TESTING.md) | Test commands and expectations |
+| [`docs/THIRD-PARTY-NOTICES.md`](docs/THIRD-PARTY-NOTICES.md) | Third-party audit result |
 
 ---
 

@@ -1,0 +1,44 @@
+name: Bug report
+description: Report a defect in the AgencyLaunch Kit source (public inspection repository).
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a defect. This repository is public for
+        inspection; reports are read as time allows, and no response time is promised.
+        For licensing questions, email Maverick_Limitless@icloud.com instead.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is wrong, in one or two sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Concrete steps, including the URL/file and input values where relevant.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser and version, operating system, and how the site was served.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this is not a duplicate.
+        - label: This report contains no secrets, credentials, or personal data.

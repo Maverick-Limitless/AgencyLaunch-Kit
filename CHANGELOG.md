@@ -3,6 +3,24 @@
 All notable changes to AgencyLaunch Kit are recorded here. Dates are real
 release dates; nothing in this file is reconstructed from invented history.
 
+## 1.1.1 — 2026-10-16
+
+Repository professionalism and public-release positioning. No product-code
+changes.
+
+- Rewrote `README.md` for conversion and trust: elevator pitch, problem,
+  solution, audience, verified feature list and technology stack, benefits
+  with practical limitations, tested setup and customization paths,
+  pricing philosophy ("straightforward, low-cost licensing… no mandatory
+  hosting subscription", price confirmed in writing per grant),
+  commercial-licensing process, ownership and attribution, third-party
+  notices, testing status, security-reporting note, and a
+  not-a-business-outcomes disclaimer.
+- Added `.github/ISSUE_TEMPLATE/bug_report.yml` — a defect-report form with
+  no support or response-time promises.
+- Re-verified the release contents and re-ran the test matrix after the
+  documentation changes; results appended to `TEST-REPORT.md`.
+
 ## 1.1.0 — 2026-10-16
 
 Licensing model and public release. No changes to the template code,
