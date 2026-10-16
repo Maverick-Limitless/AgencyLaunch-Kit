@@ -20,6 +20,12 @@ changes.
   no support or response-time promises.
 - Re-verified the release contents and re-ran the test matrix after the
   documentation changes; results appended to `TEST-REPORT.md`.
+- Replaced the README and grant-template repository-URL placeholders with
+  the actual repository URL after publication.
+- **Published publicly on GitHub:** `https://github.com/scottyqzhconron55-sudo/AgencyLaunch-Kit`
+  (public repository under that account, branch `main`, remote HEAD
+  `7636287`, topics `website-template`, `html`, `css`, `javascript`,
+  `ai-automation`, `proprietary-license`).
 
 ## 1.1.0 — 2026-10-16
 
